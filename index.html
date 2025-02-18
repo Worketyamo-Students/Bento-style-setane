@@ -5,13 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setane portfolio</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <style type="text/tailwindcss">
       @theme {
-        --color-primarygreen: #618264;
-        --color-secondarygreen: #79ac78;
-        --color-thirdgreen: #79ac78;
+        --color-primary: #161616;
+        --color-secondary: #1b1b1b;
+        --color-third: #f35034;
+        --color-last: #c0c0c0;
       }
     </style>
   </head>
-  <body></body>
+  <body class="bg-primary font-['Inter'] p-8 text-last">
+    <!-- header -->
+    <header class="w-full flex justify-between">
+      <div
+        class="bg-secondary flex justify-center items-center rounded-3xl size-10 bg-secondary"
+      >
+        <img src="./assets/img/doted.svg" alt="" class="size-6" />
+      </div>
+      <div
+        class="flex w-full rounded-3xl justify-between px-5 items-center bg-secondary"
+      >
+        <h1 class="text-third font-bold">About</h1>
+        <img src="./assets/img/burger.svg" alt="burger menue" class="" />
+      </div>
+    </header>
+    <main>
+      <!-- hero section -->
+      <div class="w-full bg-secondary mt-5 rounded p-5">
+        <div class="flex flex-col gap-3">
+          <div
+            class="flex rounded-2xl w-50/100 h-5 bg-primary items-center px-2 gap-3"
+          >
+            <div class="rounded-2xl bg-third size-4 w-3 h-3"></div>
+            <h1 class="text-[10px]">AVAILABLE FOR JOB</h1>
+          </div>
+          <div>
+            <h1>MERN developer, UI/UX Designer</h1>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
